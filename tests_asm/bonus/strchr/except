@@ -1,0 +1,5 @@
+
+-------------STRCHR-------------
+FOUND () = 
+FOUND (t...) = t...
+NOT FOUND (nil) = (nil)
