@@ -1,0 +1,53 @@
+name: Tests
+
+on:
+  push:
+    branches: [ master ]
+  
+  workflow_dispatch:
+
+jobs:
+  tests:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - name: strlen
+        run: |
+          bonus/tester.sh strlen
+      - name: strchr
+        run: |
+          bonus/tester.sh strchr
+      - name: memset
+        run: |
+          bonus/tester.sh memset
+      - name: memcpy
+        run: |
+          bonus/tester.sh memcpy
+      - name: strcmp
+        run: |
+          bonus/tester.sh strcmp
+      - name: memmove
+        run: |
+          bonus/tester.sh memmove
+      - name: strncmp
+        run: |
+          bonus/tester.sh strncmp
+      - name: strcasecmp
+        run: |
+          bonus/tester.sh strcasecmp
+      - name: rindex
+        run: |
+          bonus/tester.sh rindex
+      - name: strstr
+        run: |
+          bonus/tester.sh strstr
+      - name: strpbrk
+        run: |
+          bonus/tester.sh strpbrk
+      - name: strcspn
+        run: |
+          bonus/tester.sh strcspn
