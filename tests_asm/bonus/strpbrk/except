@@ -1,0 +1,7 @@
+
+-------------STRPBRK-------------
+FOUND (to...) = to...
+SAME (Gito...) = Gito...
+0 (nulll) = (null)
+NOT FOUND (nulll) = (null)
+TOO LONG (nulll) = (null)

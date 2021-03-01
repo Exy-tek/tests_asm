@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 
 -------------STRCMP-------------
 OK = 0
 same length (5) = 5
 Result (-18) < = -18
 Result (32) > = 32
+=======
+
+-------------STRCMP-------------
+OK = 0
+same length (5) = 5
+Result (-18) < = -18
+Result (32) > = 32
+>>>>>>> 95456636fd8a7c773da5c519dbe18b81c93fbc79

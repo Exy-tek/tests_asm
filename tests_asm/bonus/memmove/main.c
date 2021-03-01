@@ -14,6 +14,12 @@ int main(void)
     char *str = malloc(sizeof(char) * 4);
     char *str2 = malloc(sizeof(char) * 4);
 
+<<<<<<< HEAD
+    memset(str, 'A', 4);
+    memset(str2, 'B', 4);
+    
+=======
+>>>>>>> 95456636fd8a7c773da5c519dbe18b81c93fbc79
     printf("\n-------------MEMMOVE-------------\n");
     memmove(str, str2, 2);
     printf("Gito (BBto) = %s\n", str);
