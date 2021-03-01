@@ -1,7 +1,3 @@
-make
-gcc main.c -L./ -lasm -fno-builtin
-gcc bonus/$1/main.c -L. -lasm -o test -Wall -Wextra 
-gcc bonus/$1/main.c -Wall -Wextra
 ./bonus/$1/compil.sh > output
 if [ $? -ne 0 ]
 then
@@ -15,9 +11,9 @@ then
     echo -e "\e[92mSUCCESS\e[0m"
 else
     echo -e "\e[91m# Got:\e[0m"
-    cat output
+    cat output | cat -e
     echo -e "\e[91m# But excepted:\e[0m"
-    cat bonus/$1/except
+    cat bonus/$1/except | cat -e
     echo -e "\e[91m# Differences:\e[0m"
     cat diff.txt
 fi

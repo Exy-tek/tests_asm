@@ -17,9 +17,13 @@ int main(void)
     memset(str, 'A', 4);
     memset(str2, 'B', 4);
 
-    printf("\n-------------MEMCPY-------------\n");
-    //memcpy(str, "Test", 280000);
-    //printf("memcpy(\"Test\") = %s\n", str);
+    printf("MEMCPY\n");
+    const char src[50] = "hello dude";
+    char dest[50];
+    strcpy(dest,"Heloooo!!");
+    printf("Before memcpy dest = %s\n", dest);
+    memcpy(dest, src, strlen(src)+1);
+    printf("After memcpy dest = %s\n", dest);
 
    return 0;
 }
